@@ -22,6 +22,7 @@
  - 支持快进，快退
  - <font color="blue"> **支持弹幕功能**</font>
 
+
 vitamio支持的视频格式：
 -  DivX/Xvid
 - FLV
@@ -33,12 +34,13 @@ vitamio支持的视频格式：
 - MP4
 - 3GP
 
->  注：目前我只有FLV,Mp4两种视频的测试地址，如果大家有其他视频格式的链接地址，帮忙发我一下。添加到issue中就行
-
-
-下一步:
-  - 添加不同类型流的测试路径
-  - 直播流的相关配置
+直播流格式：
+ - MMS
+ - RTSP (RTP, SDP), RTMP
+ - HTTP progressive streaming
+ - HLS - HTTP live streaming (M3U8)
+ 
+>  注： 不同视频格式的测试地址有mp4,avi,flv，直播流的测试地址有：RTMP，M3U8。如果大家有其他视频格式的链接地址，帮忙发我一下。添加到issue中就行
 
 下一步：
   - 添加视频设置界面，可以设置播放的一些配置（画面质量，硬解码等）
@@ -105,3 +107,7 @@ CustomMediaController 类中处理相关ui操作，VideoViewActivity中处理Vid
 ## 扩展
   ---
    大家如果在使用中想要提出公司业务相关的功能，比如视频前加广告，可以直接提交到issue上。（ps：这个我现在也不知道怎么做）。我会把一些好的需求加到项目的功能计划中，相信大家一起参与就能实现。
+
+## 版权说明
+  ---
+  项目目前是基于vitamio进行二次开发的，该开源库对个人开发者免费，对公司收费。如果是公司使用，请自行和[vitamio公司](https://www.vitamio.org)协商付费。

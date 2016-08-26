@@ -34,7 +34,6 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-
 import com.elliott.supervideoplayer.utils.LogUtils;
 import com.elliott.supervideoplayer.utils.T;
 
@@ -66,6 +65,11 @@ import master.flame.danmaku.danmaku.parser.IDataSource;
 import master.flame.danmaku.danmaku.parser.android.BiliDanmukuParser;
 import master.flame.danmaku.danmaku.util.IOUtils;
 
+/**
+ * auther: elliott zhang
+ * Emaill:18292967668@163.com
+ *  播放在线视频流界面
+ */
 public class VideoViewActivity extends Activity  {
     public static final String VIDEO_PATH="videoName";
     private VideoView mVideoView;
@@ -224,9 +228,7 @@ public class VideoViewActivity extends Activity  {
                 }
             };
         }
-
         ILoader loader = DanmakuLoaderFactory.create(DanmakuLoaderFactory.TAG_BILI);
-
         try {
             loader.load(stream);
         } catch (IllegalDataException e) {
